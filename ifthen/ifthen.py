@@ -23,3 +23,11 @@
 
 #beans
 #woohee
+x=input("enter the number of beans a mouse should eat: ")
+
+if (x=="1"):
+  for i in range(0,100):
+    print(i)
+else:
+  print("U suck")
+
