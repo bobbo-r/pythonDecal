@@ -31,3 +31,4 @@ if (x=="1"):
 else:
   print("U suck")
 
+#beans
