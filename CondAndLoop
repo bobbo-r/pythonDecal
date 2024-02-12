@@ -1,0 +1,13 @@
+#Some conditionals and loops we did in class feb 12
+
+#for i in range(10, 1, -1):
+ #   print(i)
+# output: range makes a set of numbers for forloop to iterate about
+
+#for i in range(1, 10, 3):
+    #print(i)
+    #permitted to go up by three even if its not an "even" step
+mylist = [1, 2, 3, 4, 5]
+for i in range(len(mylist)):
+    print(i)
+
