@@ -1,0 +1,70 @@
+#empty list
+list = []
+#add stuff to list
+list.append("beans")
+#print(list)
+#insert list item in index 1
+list.insert(1, "rice")
+#print element in index 1
+#print(list[1])
+#print entire list
+#print(list)
+list.append("mars")
+list.remove("mars")
+#adds then removes item in list
+#.remove gets rid of specific element by its value, not index
+#print(list)
+#print list length
+#print(len(list))
+
+
+
+#dictionary with key "one, two..." and values in int
+dict = {"one" : 1, "two":2}
+#return same info, print
+#print(dict)
+#changed key value of "one" from 1 to 5
+dict["one"]=5
+#print(dict)
+
+#SLICE, JOIN lists
+#list sliced, removes 1, not inclusive of end index specified
+nums = [1, 2, 3, 4]
+numsSliced = nums[1:4]
+#print(numsSliced)
+#can reverse lists ... must have "::" by step size "-1"
+reverse = nums[4::-1]
+#print(reverse)
+reverse1 = nums[4::-2]
+#print(reverse1)
+#add lists
+list1 = [2, 3]
+list2 = [1]
+newlist = list1 + list2
+#print(newlist)
+#returns 2, 3, 1
+#extend() does the same as .append(list2) or "+"
+#print(list1)
+list1.extend(list2)
+#print(list1)
+mang = ["apple", "beans", "canes"]
+#makes a new list containing
+#only elements with specficied starting character using 
+#".upper() for list1 in list2 if list1.startswith('character')
+c_words = [mangword.upper() for mangword in mang if mangword.startswith('c')]
+dict1 = {"a":[1, 2, 3], "b":[4, 5, 6], "c":[7, 8, 9]}
+#name = key, sum(num) creates num list and equstes it to keyed list
+#divide by len(num) which is scalar
+#"for name, num in listname.items()" is a loop for each
+#key which makes new element in newdict
+#it adds this element for each key in new dictionary
+#returns float for int assinged to new key
+avg_dict1 = {name:sum(num) / len(num) for name, num in dict1.items()}
+print(avg_dict1)
+
+
+
+
+
+
+
