@@ -6,3 +6,18 @@ def f(x, y):
     -1
     """
     return x-y
+
+def factLoop(n):
+    """
+        >>> factLoop(3)
+        6
+    """
+
+    total = 1
+    for i in range(n):
+        total*=i
+    return total
+
+
+
+
