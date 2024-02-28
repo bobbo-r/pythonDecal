@@ -33,12 +33,12 @@ This is the error you get:
 
  # PART 1
 """ What line is your error on? """
-print("The error is on line: ", "YOUR ANSWER HERE")
+print("The error is on line: ", "1")
 
 # PART 2
 """ Rewrite that line to correct the error
     Please keep the code in quotes!"""
-print("The line should be: ", "YOUR CODE HERE")
+print("The line should be: ", "curr = func(i)")
 
 
 
@@ -71,12 +71,12 @@ But instead you get:
 
 # PART 1
 """ What line is your error on? """
-print("The error is on line: ", "YOUR ANSWER HERE")
+print("The error is on line: ", "6")
 
 # PART 2
 """ Rewrite that line to correct the error
     Please keep the code in quotes!"""
-print("The line should be: ", "YOUR CODE HERE")
+print("The line should be: ", "scores = [int(percent * max_score) for percent in percentages]")
 
 
 # PROBLEM 3
@@ -105,15 +105,18 @@ The output you get is:
 Modify the code so that it works as intended.
 ** Try to only change 2 lines! **
 """
-
+"""
 patients = [[70, 1.8], [80, 1.9], [150, 1.7]]
 
 def calculate_bmi(weight, height):
     return weight / (height ** 2)
 
-"YOUR CODE HERE"
+for patient in patients:
+    7    height, weight = patients[patient] #
+    8    bmi = calculate_bmi(weight, height) #
+    9    print(f'Patient\'s BMI is: {bmi}') #
 
-
+"""
 #PROBLEM 4: Shopping Cart Analyzer
 """
 You are given two lists representing a customer's shopping cart and the corresponding prices of the items in the cart. 
@@ -130,8 +133,21 @@ Output
 The total cost would be calculated as (1.2 + 0.9 + 1.0 + 2.5) - (0.1 * 1.2) - (0.05 * 0.9) = 4.42
 calculate_total_cost(cart_items, item_prices, discounts)  # Output: 4.42
 """
-# YOUR CODE HERE
+"""
+cart_items = ['apple', 'banana', 'orange', 'milk']
+item_prices = [1.2, 0.9, 1.0, 2.5]
+discounts = {'apple': 0.1, 'banana': 0.05}
+def calculate_total_cost(cart_items, item_prices, discounts):
+    tot = 0
+    if cart_items[1] in discounts.keys():
+        tot += item_prices[i]
+    for i in discounts.keys() :
+        tot -= discounts[i]*item_prices[i]
 
+    return tot
+calculate_total_cost(cart_items, item_prices, discounts)
+
+"""
 
 #PROBLEM 5: Grouping Dictionary Elements
 """
