@@ -35,6 +35,8 @@ RESULT: on average, numpy is FASTER
 nums = np.array([(1, 2, 3, 5, 2, 3, 1)])
 def uniqueEle(nums):
     nums = np.unique(nums, return_counts = True) #check documentation
+    #returns array with unique numbers ordered, then array 
+    #with respective num of times it is repeated in og array
     return nums
 print(uniqueEle(nums))
 
