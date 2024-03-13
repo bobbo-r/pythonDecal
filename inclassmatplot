@@ -1,0 +1,59 @@
+"""
+Plt.imshow() represents additional dimension in data
+2d array plotted on grid
+
+create grid np.meshgrid
+deinfe x and y arrays np.linspace
+paramters: matplotlib documentation
+
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+Use these lines for color mapped data using 3 variables
+
+var.linspace starts from start, end, number of points u want on line
+same as np.arange (start, end, step size)
+
+plt.figure()
+defines figure to plots
+plt.imshow(z, cmap= "insert_colormap_code_here") plots function with color map (check matplot lib documentation) 
+
+Shows color based on value of z at (x, y) like many level curves
+
+************COLOR DATA DOCUMENTATION: https://matplotlib.org/stable/users/explain/colors/index.html
+
+#####QUICK GUIDE TO GRAPH COLOR MAP OF 2 variables
+
+    import numpy as np
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+    %matplotlib inline
+
+
+    x, y= np.meshgrid(np.linspace(-5, 5, 100), np.linspace(-5,5,100))
+    f = (#insert function here) #creates function
+
+    plt.figure() #creates figure to assign values to colors
+    plt.imshow(f, cmap="#insert color map") #plots function
+    plt.ylabel("y-axis") #label x and y axes
+    plt.xlabel("x-axis")
+    plt.colorbar() #creates color bar on side
+    plt.show() #shows everything prior
+
+**********************************************************************
+    
+    Use sns to load in data
+
+ex) example_data = sns.load_dataset("penguins")
+example_data #calls data set
+
+#Creates bar graph with arguments(data_set, x="axis name", y ' ....)
+
+***********Sns uses pregenerated data, plt uses calculated data on the spot
+
+#.barplot() creates barplot of many variables side by side in one plot
+    sns.barplot(data=example_data, x = "island", y = "body_mass_g")
+
+
