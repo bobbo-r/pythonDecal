@@ -33,7 +33,7 @@ Shows color based on value of z at (x, y) like many level curves
 
 
     x, y= np.meshgrid(np.linspace(-5, 5, 100), np.linspace(-5,5,100))
-    f = (#insert function here) #creates function
+    f =(#insert function here) #creates function
 
     plt.figure() #creates figure to assign values to colors
     plt.imshow(f, cmap="#insert color map") #plots function
